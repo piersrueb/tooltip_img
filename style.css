@@ -1,0 +1,41 @@
+/*  CSS document  */
+
+html, body{
+    background: #db2853;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+p#number{
+    font-family: 'Jua', sans-serif;
+    font-size: 300px;
+    margin: 10% auto 0;
+    text-align: center;
+}
+
+#btn{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin: 0 auto;
+    text-align: center;
+    color: #db2853;
+    background: #000;
+    width: 200px;
+    padding: 20px 0 17px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border: solid 2px #000;
+    transition: all 0.4s;
+}
+
+#btn:hover{
+    color: #000;
+    background: #db2853;
+    border: solid 1px #000;
+}
+
+#btn:active{
+    transform: scale(1.2);
+}
