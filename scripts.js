@@ -1,16 +1,17 @@
 //  js file
 
 var allSPans = document.getElementsByTagName('span'),
-    toolTip = document.getElementById('tooltip');
+    toolTip = document.getElementById('tooltip'),
+    copy = document.getElementById('copy');
 
 window.addEventListener('mousemove', track);
 function track(){
     mouseX = event.clientX + document.body.scrollLeft + 1,
     mouseY = event.clientY + document.body.scrollTop - 40;
-	document.getElementById('tooltip').setAttribute('style', 'top:' + mouseY + 'px; left:' + mouseX + 'px;');
+	toolTip.setAttribute('style', 'top:' + mouseY + 'px; left:' + mouseX + 'px;');
 }
 
-document.getElementById('copy').addEventListener('mouseover', showTt);
+copy.addEventListener('mouseover', showTt);
 function showTt(e){
     if (e.target.tagName === 'SPAN'){
         var ttImage = e.target.dataset.img;
