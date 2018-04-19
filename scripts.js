@@ -14,7 +14,7 @@ document.getElementById('copy').addEventListener('mouseover', showTt);
 function showTt(e){
     if (e.target.tagName === 'SPAN'){
         var ttImage = e.target.dataset.img;
-        toolTip.innerHTML = '<img src="' + ttImage + '">';
+        toolTip.innerHTML = '<img src="img/' + ttImage + '">';
         toolTip.setAttribute('class', 'show');
     } else{
         toolTip.setAttribute('class', '');
