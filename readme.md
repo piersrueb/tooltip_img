@@ -1,12 +1,12 @@
-## Random number generator
+## Image Tooltip
 
-It like, generates random numbers and stuff.
+Tooltip image pulled from data attribute.
 
 
 ```
 
    |\          .(' *) ' .
-   | \        ' .*)13'*
+   | \        ' .*)pic*
    |(*\      .*(// .*) .
    |___\       // (. '*
    ((("'\     // '  * .

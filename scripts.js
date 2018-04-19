@@ -1,10 +1,22 @@
 //  js file
-var rNum;  //  set global variable
 
-function getRandNum(){
-    rNum = Math.floor(Math.random() * 25) + 1;  //  get random number between 1 - 25, store it in rNum variable
-    document.getElementById('number').innerHTML = rNum;  //  insert the random number into the ID
+var allSPans = document.getElementsByTagName('span'),
+    toolTip = document.getElementById('tooltip');
+
+window.addEventListener('mousemove', track);
+function track(){
+    mouseX = event.clientX + document.body.scrollLeft + 1,
+    mouseY = event.clientY + document.body.scrollTop - 40;
+	document.getElementById('tooltip').setAttribute('style', 'top:' + mouseY + 'px; left:' + mouseX + 'px;');
 }
-getRandNum();  //  run the function on init
 
-document.getElementById('btn').addEventListener('click', getRandNum);  //  run it when we click the button
+document.getElementById('copy').addEventListener('mouseover', showTt);
+function showTt(e){
+    if (e.target.tagName === 'SPAN'){
+        var ttImage = e.target.dataset.img;
+        toolTip.innerHTML = '<img src="' + ttImage + '">';
+        toolTip.setAttribute('class', 'show');
+    } else{
+        toolTip.setAttribute('class', '');
+    }
+}
