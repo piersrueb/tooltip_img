@@ -26,7 +26,7 @@ function showTt(e){
 var allCities = ['london', 'paris', 'amsterdam', 'newyork', 'berlin', 'stockholm', 'madrid', 'rome', 'chicago', 'athens', 'vienna', 'copenhagen', 'brussels', 'barcelona', 'dublin'],
     cities = [];
 
-for (var i = 0; i < allCities.length; i++) {
+for (var i = 0; i < allCities.length; i++) {  //  loop through the cities array
     cities[i] = new Image();
     cities[i].src =  'img/' + allCities[i] + '.jpg';
 }
