@@ -1,11 +1,10 @@
 //  js file
 
-var allSPans = document.getElementsByTagName('span'),  //  store all span tags in array
-    toolTip = document.getElementById('tooltip'),
+var toolTip = document.getElementById('tooltip'),
     copy = document.getElementById('copy');
 
 window.addEventListener('mousemove', track);  //  listen for mouse movement
-function track(){
+function track(){  //  run function on mouse move
     mouseX = event.clientX + document.body.scrollLeft + 1,  //  get x position of mouse
     mouseY = event.clientY + document.body.scrollTop - 40;  //  get y position of mouse
 	toolTip.setAttribute('style', 'top:' + mouseY + 'px; left:' + mouseX + 'px;');  //  set the x and y of tooltip based on mouse position
