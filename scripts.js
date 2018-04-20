@@ -20,3 +20,13 @@ function showTt(e){
         toolTip.setAttribute('class', '');  //  hide the tooltip
     }
 }
+
+//  preload the images
+
+var allCities = ['london', 'paris', 'amsterdam', 'newyork', 'berlin', 'stockholm', 'madrid', 'rome', 'chicago', 'athens', 'vienna', 'copenhagen', 'brussels', 'barcelona', 'dublin'],
+    cities = [];
+
+for (var i = 0; i < allCities.length; i++) {
+    cities[i] = new Image();
+    cities[i].src =  'img/' + allCities[i] + '.jpg';
+}
