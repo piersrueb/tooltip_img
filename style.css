@@ -24,11 +24,6 @@ p{
     line-height: 1.6em;
 }
 
-p span{
-    color: #db2853;
-    cursor: pointer;
-}
-
 #tooltip{
     position: absolute;
     width: 100px;
@@ -38,5 +33,6 @@ p span{
     transition: opacity 0.2s;
 }
 
+p span{ cursor: pointer; }
 #tooltip img{ max-width: 100%; }
 .show{ opacity: 1 !important; }
